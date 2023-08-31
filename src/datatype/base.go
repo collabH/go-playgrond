@@ -27,6 +27,14 @@ func int_arr() {
 	for j = 0; j < 10; j++ {
 		fmt.Printf("Element[%d] = %d\n", j, n[j])
 	}
-}
 
-// 其他基础类型类似于java
+	var staticArr = [10]int{1, 2, 3}
+
+	dynamicArr := [...]int{1, 2, 34}
+	println(staticArr)
+	println(dynamicArr)
+
+	// 多位数组
+	var a = [3][4]int{[4]int{1, 2, 3}, [4]int{1, 2, 3}, [4]int{1, 2}}
+	println(a)
+}
