@@ -41,6 +41,8 @@ func main() {
 	person := Person{mem, "这是一个男人"}
 	fmt.Println(person)
 
+	// test if condition
+	conditionIf(false)
 }
 
 // 切片（slice）是对数组一个连续片段的引用。它是指向底层数组的指针。不需要定义长度。和数组在写法上的区别就是不需要指定长度。
@@ -81,4 +83,12 @@ func mapCollection() {
 	makeMap["a"] = "1"
 	makeMap["a"] = "2"
 	fmt.Println(makeMap)
+}
+
+func conditionIf(isPass bool) {
+	if isPass {
+		println("恭喜你通过了!")
+	} else {
+		println("请继续努力...")
+	}
 }
